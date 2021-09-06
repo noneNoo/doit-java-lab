@@ -1,0 +1,23 @@
+package chapter2;
+
+public class ImplicitConversion {
+
+	public static void main(String[] args) {
+		byte bNum = 10;
+		int iNum = bNum;	// byte -> int 묵시적 형변환
+		
+		System.out.println(bNum);
+		System.out.println(iNum); 
+		
+		int iNum2 = 20;
+		float fNum = iNum2;	// int -> float 묵시적 형변환
+		
+		System.out.println(iNum);
+		System.out.println(fNum);
+
+		double dNum = fNum + iNum; // 연산 과정에서 double로 묵시적 형변환
+		System.out.println(dNum);
+		
+	}
+
+}

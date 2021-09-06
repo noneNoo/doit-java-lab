@@ -1,0 +1,16 @@
+package chapter2;
+
+public class ExplicitConversion {
+
+	public static void main(String[] args) {
+		double dNum = 1.2;
+		float fNum = 0.9F;
+		
+		System.out.println(dNum);
+		System.out.println(fNum);
+		
+		int iNum3 = (int)dNum + (int)fNum;
+		int iNum4 = (int)(dNum + fNum);
+	}
+
+}
