@@ -1,0 +1,38 @@
+package chapter4;
+
+public class Alone2 {
+
+	public static void main(String[] args) {
+		int floor = 5;
+		String place;
+		String ment;
+		
+		switch(floor) {
+		case 1:
+			place = "¾à±¹";
+			System.out.print(floor + "Ãþ " + place);
+			break;
+		case 2:
+			place = "Á¤Çü¿Ü°ú";
+			System.out.print(floor + "Ãþ " + place);
+			break;
+		case 3:
+			place = "ÇÇºÎ°ú";
+			System.out.print(floor + "Ãþ " + place);
+			break;
+		case 4:
+			place = "Ä¡°ú";
+			System.out.print(floor + "Ãþ " + place);
+			break;
+		case 5:
+			place = "Çï½º Å¬·´";
+			System.out.print(floor + "Ãþ " + place);
+			break;
+		default:
+			System.out.print(floor + "ÃþÀº Àß¸øµÈ Ãþ");
+			break;
+		}
+		System.out.println("ÀÔ´Ï´Ù.");
+	}
+
+}
