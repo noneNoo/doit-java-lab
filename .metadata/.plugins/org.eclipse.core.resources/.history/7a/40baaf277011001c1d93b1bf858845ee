@@ -1,0 +1,11 @@
+package chapter4;
+
+public class Quiz4 {
+
+	public static void main(String[] args) {
+		int lineCount = 5;
+		int spaceCount = lineCount / 2 + 1;
+		System.out.println(spaceCount)
+	}
+
+}

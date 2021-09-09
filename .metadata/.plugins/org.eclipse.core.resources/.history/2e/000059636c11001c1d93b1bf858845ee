@@ -1,0 +1,30 @@
+package chapter4;
+
+public class Quiz4 {
+
+	public static void main(String[] args) {
+		final int MAX_FLOOR = 5;
+		int starCount = 0;
+		// 4층짜리 피라미드 찍기
+		for(int i = 1; i < MAX_FLOOR; i++) {
+			for(int k = i; k < MAX_FLOOR; k++) {
+				System.out.print("  ");
+			}
+			for(int j = 0; j < i; j++) {
+				if(j == 0) {
+					System.out.print("* ");
+					starCount += 1;
+				} else {
+				System.out.print("* * ");
+				starCount += 2;
+				}
+			}
+			System.out.println();
+			if (i == MAX_FLOOR - 1) {
+				System.out.println("새로운 줄: " + i);
+			}
+		}
+		
+	}
+
+}

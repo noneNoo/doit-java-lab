@@ -1,0 +1,18 @@
+package chapter4;
+
+public class Quiz4 {
+
+	public static void main(String[] args) {
+		// 4층짜리 피라미드 찍기
+		char space = ' ';
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < i; j++) {
+				System.out.print(j - i);
+
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}
