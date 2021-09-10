@@ -1,0 +1,15 @@
+package chapter5;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Alone3OrderInfo {
+	public static void main(String[] args) {
+		
+		OrderInfo order1 = new OrderInfo();
+		
+		SimpleDateFormat df = new SimpleDateFormat("2018-03-12");
+		System.out.println(df);
+	}
+
+}

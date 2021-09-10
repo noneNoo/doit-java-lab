@@ -1,0 +1,17 @@
+package chapter5;
+
+import java.text.SimpleDateFormat;
+public class Alone3OrderInfo {
+	public static void main(String[] args) {
+		
+		OrderInfo order1 = new OrderInfo();
+		
+		order1.orderNum = 201803120001;
+		
+		order1.orderDate = "2020³â 3¿ù 12ÀÏ";
+		
+		
+		System.out.println();
+	}
+
+}

@@ -1,0 +1,26 @@
+package chapter5;
+
+public class Alone2 {
+
+	public static void main(String[] args) {
+
+		public class Person {
+			int age;
+			String name;
+			boolean isMarried;
+			int children;
+			
+		}
+
+		Person personJ = new Person();
+		
+		personJ.age = 40;
+		personJ.name = "James";
+		personJ.isMarried = true;
+		personJ.children = 3;
+				
+
+	}
+	
+
+}
