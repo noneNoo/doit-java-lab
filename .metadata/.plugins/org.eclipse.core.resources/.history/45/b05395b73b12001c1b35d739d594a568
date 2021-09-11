@@ -1,0 +1,55 @@
+package chapter5;
+
+public class MyDate {
+	private int day;
+	private int month;
+	private int year;
+	
+
+	// 생성자 만들기
+	public MyDate(int day, int year, int month) {
+		
+	}
+	
+	public boolean isValid() {
+		if()
+		return true;
+	}
+	
+	
+	public int getMonth() {
+		return month;
+	}
+
+
+	public void setMonth(int month) {
+		this.month = month;
+	}
+
+
+	public int getYear() {
+		return year;
+	}
+
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+
+	public int getDay() {
+		return day;
+	}
+
+
+	public void setDay(int day) {
+		if(month == 2) {
+			if(day > 28 || day < 1) {
+				System.out.println("오류입니다. 날짜를 확인하세요.");
+			} else {
+				this.day = day;
+			}
+		}
+	}
+	
+}
