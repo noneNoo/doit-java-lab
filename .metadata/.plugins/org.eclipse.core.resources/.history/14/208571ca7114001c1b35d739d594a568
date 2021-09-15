@@ -1,0 +1,11 @@
+package cooperation;
+
+public class TakeTrans {
+
+	public static void main(String[] args) {
+		Student StudentJames = new Student("James", 5000);
+		Student StudentTomas = new Student("James", 5000);
+		
+	}
+
+}

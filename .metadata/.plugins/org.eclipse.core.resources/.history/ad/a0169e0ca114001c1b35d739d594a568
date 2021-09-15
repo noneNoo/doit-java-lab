@@ -1,0 +1,18 @@
+package cooperation;
+
+public class Taxi {
+	int passengerCount;
+	int money;
+	
+
+	// ½Â°´ÀÌ ÁöÇÏÃ¶¿¡ Åº °æ¿ì¸¦ ±¸ÇöÇÑ ¸Ş¼­µå
+	public void take(int money) {
+		this.money += money;
+		passengerCount++;
+	}
+	
+	public void showInfo(Student student) {
+		System.out.println("¾îÀÌ ­jÅä" + student.studentName + "Äï, ÁöÄÚÄíÁöÄÚÄí!");
+		System.out.println(" ÅÃ½Ãºñ´Â" + money + "ÀÔ´Ï´Ù.");
+	}
+}

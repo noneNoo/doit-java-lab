@@ -1,0 +1,12 @@
+package staticexample;
+
+public class StudentTest5 {
+
+	public static void main(String[] args) {
+		Student3 studentSoi = new Student3();
+		studentSoi.setStudentName("¹Ú¼ÒÀÌ");
+		System.out.println(studentSoi.cardNum);
+		System.out.println(studentSoi.getSerialNum());
+	}
+
+}

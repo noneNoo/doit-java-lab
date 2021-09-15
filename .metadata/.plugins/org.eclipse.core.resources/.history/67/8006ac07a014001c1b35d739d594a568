@@ -1,0 +1,25 @@
+package cooperation;
+
+public class TakeTrans {
+
+	public static void main(String[] args) {
+		Student studentJames = new Student("James", 5000);
+		Student StudentTomas = new Student("James", 5000);
+		
+		// 노선 번호가 100인 버스 생성
+		
+		Bus bus100 = new Bus(100);
+		studentJames.takeBus(bus100);
+		bus100.showInfo();
+		studentJames.showInfo();
+		
+		
+		// 2호선 지하철 생성!
+		Subway subwayGreen = new Subway(2);
+		StudentTomas.takeSubway(subwayGreen);
+		subwayGreen.showInfo();
+		StudentTomas.showInfo();
+		
+	}
+
+}
