@@ -1,0 +1,11 @@
+package chapter6quiz.quiz5;
+
+public class StarCafe {
+	private int money // 수익
+	String name = "별다방"; // 카페이름
+	String order;
+	
+	public void take(int money) {
+		
+	}
+}

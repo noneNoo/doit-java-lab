@@ -1,0 +1,17 @@
+package chapter6quiz.quiz6_7;
+
+public class CardCompany {
+	// 1. 기본 생성자
+	private CardCompany() {
+		
+	}
+	private static CardCompany instance = new CardCompany();
+	
+	public static CardCompany getInstance() {
+		if(instance == null) {
+			instance = new CardCompany();
+		}
+		return instance;
+	}
+	
+}

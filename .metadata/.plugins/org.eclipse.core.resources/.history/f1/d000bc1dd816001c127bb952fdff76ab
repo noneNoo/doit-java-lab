@@ -1,0 +1,12 @@
+package chapter6quiz.quiz6_7;
+
+public class CardTest {
+
+	public static void main(String[] args) {
+		CardCompany company = CardCompany.getInstance();
+		System.out.println(company.companyName);
+		
+		
+	}
+
+}
