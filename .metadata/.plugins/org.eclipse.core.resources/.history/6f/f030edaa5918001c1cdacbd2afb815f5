@@ -1,0 +1,24 @@
+package inheritance;
+
+// Customer 클래스를 상속받아 그 속성들을 받아온다
+public class VIPCustomer extends Customer {
+	// 특별히 변화가 필요한 부분들을 새로 선언
+	private int agentID;	// VIP 전용 상담원
+	double saleRatio;		// VIP 전용 할인율
+	
+	// VIP 고객 생성
+	public VIPCustomer() {
+//		customerGrade = "VIP"; // 상위 클래스에서 private로 선언한 변수라 오류가 발생한다
+		
+		this.setGrade("VIP");
+		
+		// 아래의 변수는 상위 클래스에서 public으로 선언했기 때문에 문제 없이 변경이 된다.
+		bonusRatio = 0.05;	// 5% 적립
+		saleRatio = 0.1;	// 10% 할인
+	}
+	
+	// 상담원 getter
+	public int getAgentId() {
+		return agentID;
+	}
+}
