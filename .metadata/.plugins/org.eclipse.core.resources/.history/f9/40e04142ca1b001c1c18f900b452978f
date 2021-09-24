@@ -1,0 +1,25 @@
+package witharraylist;
+import java.util.ArrayList;
+
+public class CustomerTest {
+
+	public static void main(String[] args) {
+		ArrayList<Customer> customerList = new ArrayList<Customer>();
+		
+		Customer customerNonenoo = new Customer(10010, "논노");
+		Customer customerDaezui = new GoldCustomer(10020, "대쥐");
+		Customer customerDanbam = new GoldCustomer(10030, "단밤");
+		Customer customerAnzu = new VIPCustomer(10040, "후타바 안즈", 12345);
+		Customer customerKirari = new VIPCustomer(10050, "모로보시 키라리", 67890);
+		
+		customerList.add(customerNonenoo);
+		customerList.add(customerDaezui);
+		customerList.add(customerDanbam);
+		customerList.add(customerAnzu);
+		customerList.add(customerKirari);
+		
+		for (Customer customer : customerList) {
+			System.out.println(customer.showCustomerInfo());
+		}
+
+}

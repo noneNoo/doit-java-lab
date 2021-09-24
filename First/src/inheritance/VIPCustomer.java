@@ -10,7 +10,6 @@ public class VIPCustomer extends Customer {
 	public VIPCustomer(int customerID, String customerName, int agentID) {
 
 		super(customerID, customerName);
-//		super(); 	// 컴파일러가 자동으로 추가하는 코드. 상위 클래스를 자동으로 호출한다 
 		
 		// protected 예약어로 상속받은 클래스에서 변수를 변경 가능하게 권한을 부여함
 		customerGrade = "VIP"; 
@@ -20,10 +19,15 @@ public class VIPCustomer extends Customer {
 		bonusRatio = 0.05;	// 5% 적립
 		saleRatio = 0.1;	// 10% 할인
 
-		System.out.println("VIPCustomer() 생성자가 호출되었습니다.");
+//		System.out.println("VIPCustomer() 생성자가 호출되었습니다.");
 	}
 	
 	// VIP 전용 할인율(메소드 오버라이딩) 다음장에서 구현
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		price -= (int)(price * saleRatio);	// 할인가를 형변환하여 계산
+		return price;
+	}
 	
 	// 상담원 getter
 	public int getAgentId() {

@@ -23,7 +23,7 @@ public class Customer {
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
-		System.out.println("Customer() 생성자가 호출되었습니다.");
+//		System.out.println("Customer() 생성자가 호출되었습니다.");
 	}
 	
 	// getter

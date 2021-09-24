@@ -1,0 +1,22 @@
+package inheritance;
+
+public class OverridingTest3 {
+
+	public static void main(String[] args) {
+		int price = 10000;
+		
+		// 일반 회원 이순신 생성
+		Customer customerLee = new Customer(10010, "이순신");
+		
+		// 일반 회원의 메서드 사용
+		System.out.println(customerLee.getName() + " 님이 지불해야 할 금액은 " + customerLee.calcPrice(price) +"원 입니다.");
+		
+		
+		// VIP 회원 김유신 생성
+		VIPCustomer customerKim = new VIPCustomer(10020, "김유신");
+		
+		// 
+
+	}
+
+}

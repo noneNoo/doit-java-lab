@@ -1,0 +1,12 @@
+package polymorphism;
+
+public class CustomerTest {
+
+	public static void main(String[] args) {
+		Customer customerNonenoo = new Customer();
+		customerNonenoo.setName("³í³ë");
+		customerNonenoo.setId(10010);
+		System.out.println(customerNonenoo.showCustomerInfo());
+	}
+
+}
