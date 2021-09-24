@@ -1,0 +1,18 @@
+package chapter9.quiz;
+
+public abstract class IdolType {
+	public void rest() {
+		System.out.println("아이돌이 휴식합니다.");
+	}
+	
+	public abstract void training();
+	public abstract boolean audition();
+	public void go(int count) {
+		for(i = 0; i < count; i++) {
+			training();
+		}
+		rest();
+		audition();
+	}
+
+}

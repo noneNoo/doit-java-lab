@@ -1,0 +1,44 @@
+package chapter9.quiz;
+
+import java.util.Random;
+
+public class VocalIdol extends IdolType {
+	VocalIdol() {
+		
+	}
+	
+	Random rand = new Random();
+	private boolean isPassed;
+	private int vocalPoint = 0;
+	
+	@Override
+	public void training(int i) {
+		System.out.println("보컬 트레이닝을 실시합니다.");
+		// 10 이상 20 이하의 값이 랜덤으로 올라간다
+		int upPoint = rand.nextInt(10) + 10;
+		vocalPoint += upPoint;
+		System.out.println("Vocal + " + upPoint);
+		System.out.println("총 Vocal 포인트: " + vocalPoint);
+		System.out.println();
+	}
+
+	@Override
+	public boolean audition() {
+		System.out.println("보컬 오디션을 실시합니다. 커트라인 50");
+		if(vocalPoint > 50) {
+			System.out.println("합격입니다.");
+			return true;
+		} else {
+			System.out.println("탈락입니다.");
+			return false;
+		}
+	}
+
+	public boolean isPassed() {
+		return isPassed;
+	}
+
+	public void setPassed(boolean isPassed) {
+		this.isPassed = isPassed;
+	}
+}

@@ -1,0 +1,16 @@
+package chapter9.quiz;
+
+public class Idol {
+	public String name;
+	private IdolType type;
+	
+	Idol(String name, IdolType type) {
+		this.name = name;
+		this.type = type;
+	}
+	
+	public boolean produce(int count) {
+		type.go(count);
+	}
+
+}

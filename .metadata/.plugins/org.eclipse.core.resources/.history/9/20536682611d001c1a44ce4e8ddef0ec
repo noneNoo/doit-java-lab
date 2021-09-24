@@ -1,0 +1,8 @@
+package chapter9.quiz;
+
+public abstract class VocalIdol extends IdolType {
+
+	@Override
+	protected abstract void start();
+
+}

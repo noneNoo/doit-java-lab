@@ -1,0 +1,11 @@
+package chapter9.quiz;
+
+public class VocalIdol extends Idol {
+
+	@Override
+	public void produce() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

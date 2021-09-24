@@ -1,0 +1,6 @@
+package chapter9.quiz;
+
+public class VocalIdol extends IdolType {
+
+
+}

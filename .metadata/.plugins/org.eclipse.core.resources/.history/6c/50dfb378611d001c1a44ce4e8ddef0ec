@@ -1,0 +1,12 @@
+package chapter9.quiz;
+
+public abstract class IdolType {
+	public abstract void training();
+	public abstract void rest();
+	public abstract void audition();
+	public void go() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

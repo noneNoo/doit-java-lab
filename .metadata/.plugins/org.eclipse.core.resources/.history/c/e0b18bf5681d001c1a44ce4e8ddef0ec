@@ -1,0 +1,18 @@
+package chapter9.quiz;
+import java.util.ArrayList;
+
+public class WingTest {
+
+	public static void main(String[] args) {
+		ArrayList<Idol> idolList = new ArrayList<Idol>();
+		IdolType vocal = new VocalIdol();
+		
+		idolList.add(new Idol("Ä¡¿äÄÚ", vocal));
+		
+		for(Idol idol : idolList) {
+			idol.produce();
+			System.out.println("==========");
+		}
+	}
+
+}

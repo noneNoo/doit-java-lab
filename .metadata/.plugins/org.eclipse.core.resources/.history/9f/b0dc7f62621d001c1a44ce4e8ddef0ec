@@ -1,0 +1,11 @@
+package chapter9.quiz;
+
+public abstract class Idol {
+	public abstract void produce() {
+		start();
+		training();
+		rest();
+		audition();
+		turnOff();
+	}
+}

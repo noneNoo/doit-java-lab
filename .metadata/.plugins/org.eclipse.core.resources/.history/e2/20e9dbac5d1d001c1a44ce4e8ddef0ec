@@ -1,0 +1,10 @@
+package chapter9.quiz;
+
+public abstract class WingProduce {
+	final void run() {
+		public abstract void start();
+		public abstract void training();
+		public abstract void rest();
+		public abstract void turnOff();
+	}
+}

@@ -1,0 +1,14 @@
+package chapter9.quiz;
+
+public abstract class VocalIdol extends Idol {
+
+	@Override
+	public void produce() {
+		start();
+		training();
+		rest();
+		audition();
+		turnOff();
+	}
+
+}

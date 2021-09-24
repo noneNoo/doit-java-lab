@@ -1,0 +1,24 @@
+package chapter9.quiz;
+
+public abstract class Idol {
+	public String name;
+	private IdolType type;
+	
+	Idol(String name, IdolType type) {
+		this.name = name;
+		this.type = type;
+	}
+	
+	public void produce() {
+		type.go(count);
+	}
+
+	public boolean getPassed() {
+		return isPassed;
+	}
+
+	public void setPassed(boolean isPassed) {
+		this.isPassed = isPassed;
+	}
+
+}
