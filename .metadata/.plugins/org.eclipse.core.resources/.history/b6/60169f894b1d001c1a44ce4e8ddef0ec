@@ -1,0 +1,13 @@
+package chapter9.gameplay;
+
+public class MainBoard {
+
+	public static void main(String[] args) {
+		Player p1 = new Player("³Ä¹«");
+		Player p2 = new Player();
+		
+		p1.getName();
+		p2.getName();
+	}
+
+}

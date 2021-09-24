@@ -1,0 +1,17 @@
+package chapter9.gameplay;
+
+public class Player {
+	// HAS A CLASS
+	private PlayerLevel level;
+	
+	Player() {
+	}
+	
+	public String getLevel() {
+		return level;
+	}
+	
+	public void setLevel(String level) {
+		this.level = level;
+	}
+}

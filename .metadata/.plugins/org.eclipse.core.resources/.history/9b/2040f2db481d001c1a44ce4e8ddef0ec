@@ -1,0 +1,19 @@
+package chapter9.gameplay;
+
+public class Player {
+	// HAS A CLASS
+	private PlayerLevel level;
+	private String name = "tq";
+	
+	Player(String name) {
+		this.name = name;
+	}
+	
+	public PlayerLevel getLevel() {
+		return level;
+	}
+	
+	public void setLevel(PlayerLevel level) {
+		this.level = level;
+	}
+}
