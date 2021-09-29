@@ -1,0 +1,18 @@
+package object;
+
+class Student{
+	int studentID;
+	String studentName;
+	
+	Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
+	}
+}
+
+public class EqulasTest {
+
+	public static void main(String[] args) {
+	}
+
+}

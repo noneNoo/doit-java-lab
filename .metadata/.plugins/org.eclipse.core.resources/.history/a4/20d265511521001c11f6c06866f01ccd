@@ -1,0 +1,65 @@
+package object;
+
+class Student{
+	int studentID;
+	String studentName;
+	
+	// 생성자
+	public Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
+	}
+	
+	// 메서드 오버라이딩
+	public String toString() {
+		return studentID + ", " + studentName;
+	}
+}
+
+// Equls Test 실행함수
+public class EqualsTest {
+	public static void main(String[] args) {
+		// 인스턴스 생성
+		Student studentSoi = new Student(100, "박소이");
+		Student studentSoiCopy = studentSoi; // 인스턴스 복사
+		//위의 두 인스턴스는 힙메모리에서 같은 주소값을 가리키게 된다.
+		
+		Student studentSoi2 = new Student(100, "박소이");
+
+		// ===============
+		// 1. 인스턴스의 복제본과 원본의 비교
+		// 1-1. == 기호로 '물리적으로' 힙메모리의 '주소값'까지 비교.
+		if(studentSoi == studentSoiCopy) {
+			System.out.println("StudentSoi 와 Copy의 주소는 같습니다.");
+		} else {
+			System.out.println("StudentSoi 와 Copy의 주소는 다릅니다");
+		}
+		
+		// 1-2. 인스턴스의 equals로 두 값이 일치하는지 (논리적인)비교
+		// equals() 메서드
+		if(studentSoi.equals(studentSoiCopy)) {
+			System.out.println("StudentSoi와 Copy는 동일합니다.");
+		} else {
+			System.out.println("StudentSoi와 Copy는 동일하지 않습니다.");
+		}
+
+		// ===============
+		// 2. 논리적으로 일치하는 값을 가진 인스턴스끼리 비교
+		// 2-1. == 기호로 '물리적으로' 힙메모리의 '주소값'까지 비교.
+		if(studentSoi == studentSoi2) {
+			System.out.println("studentSoi와 studentSoi2의 주소는 같습니다.");
+		} else {
+			System.out.println("studentSoi와 studentSoi2의 주소는 다릅니다.");
+		}
+
+		// 2-2. 인스턴스의 equals로 두 값이 일치하는지 (논리적인)비교
+		if(studentSoi.equals(studentSoi2)) {
+			System.out.println("studentSoi와 studentSoi2는 동일합니다");
+		} else {
+			System.out.println("studentSoi와 studentSoi2는 동일하지 않습니다.");
+		}
+		
+		
+	}
+
+}

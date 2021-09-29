@@ -1,0 +1,24 @@
+package object;
+
+class Student{
+	int studentID;
+	String studentName;
+	
+	// »ı¼ºÀÚ
+	public Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
+	}
+	
+	//
+	public String toString() {
+		return studentID + ", " + studentName;
+	}
+}
+
+public class EqulasTest {
+
+	public static void main(String[] args) {
+	}
+
+}

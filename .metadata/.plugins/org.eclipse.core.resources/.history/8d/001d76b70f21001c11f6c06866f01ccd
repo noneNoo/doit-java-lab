@@ -1,0 +1,39 @@
+package object;
+
+class Student{
+	int studentID;
+	String studentName;
+	
+	// 생성자
+	public Student(int studentID, String studentName) {
+		this.studentID = studentID;
+		this.studentName = studentName;
+	}
+	
+	// 메서드 오버라이딩
+	public String toString() {
+		return studentID + ", " + studentName;
+	}
+}
+
+// Equls Test 실행함수
+public class EqulasTest {
+	public static void main(String[] args) {
+		// 인스턴스 생성
+		Student studentSoi = new Student(100, "박소이");
+		Student studentSoiCopy = studentSoi; // 인스턴스 복사
+		
+		Student studentSoi2 = new Student(100, "박소이");
+
+		// == 기호로 주소값까지 비교.
+		if(studentSoi == studentSoiCopy) {
+			System.out.println("StudentSoi 와 Copy의 주소는 같습니다.");
+		} else {
+			System.out.println("StudentSoi 와 Copy의 주소는 다릅니다");
+		}
+		
+		
+		
+	}
+
+}

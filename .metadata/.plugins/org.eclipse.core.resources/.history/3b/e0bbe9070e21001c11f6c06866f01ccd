@@ -1,0 +1,16 @@
+package object;
+
+class Student{
+
+	int studentID;
+	String sutdentName;
+	
+	Studen	
+}
+
+public class EqulasTest {
+
+	public static void main(String[] args) {
+	}
+
+}
