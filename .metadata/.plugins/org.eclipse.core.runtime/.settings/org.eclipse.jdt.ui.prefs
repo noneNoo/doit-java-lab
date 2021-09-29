@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="chapter9.template.Car"><rhs name\="chapter9.template.ManualCar"/></lhs><lhs name\="chapter9.gameplay.PlayerLevel"><rhs name\="chapter9.gameplay.BeginnerLevel"/><rhs name\="chapter9.gameplay.AdvancedLevel"/><rhs name\="chapter9.gameplay.SuperLevel"/></lhs><lhs name\="chapter9.gameplay.AdvancedLevel"><rhs name\="chapter9.gameplay.AdvancedLevel"/></lhs><lhs name\="chapter9.gameplay.SuperLevel"><rhs name\="chapter9.gameplay.SuperLevel"/></lhs><lhs name\="scheduler.Scheduler"><rhs name\="scheduler.PriorityAllocation"/><rhs name\="scheduler.AgentGetCall"/></lhs></history>
 content_assist_number_of_computers=12
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
