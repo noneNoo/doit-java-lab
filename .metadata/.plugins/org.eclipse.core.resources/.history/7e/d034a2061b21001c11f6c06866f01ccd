@@ -16,6 +16,7 @@ class Student{
 	}
 	
 	// equals 메서드 오버라이딩
+	
 	public boolean equals(Object obj) {
 		// 인자로 들어온 인스턴스를 학생형으로 형변환한다.
 		Student std = (Student)obj;
@@ -37,10 +38,6 @@ class Student{
 			System.out.println("========");
 			return false;
 		}
-	}
-	
-	public int HashCode() {
-		return studentID;
 	}
 	
 }
@@ -90,18 +87,6 @@ public class EqualsTest {
 		} else {
 			System.out.println("studentSoi와 studentSoi2는 동일하지 않습니다.");
 		}
-		
-		// =====
-		
-		System.out.println(studentSoi.HashCode());
-		System.out.println(studentSoi2.HashCode());
-		System.out.println(studentAnzu.HashCode());
-		
-		System.out.println("=====");
-
-		// 실제 인스턴스의 주소값
-		System.out.println(System.identityHashCode(studentSoi));
-		System.out.println(System.identityHashCode(studentSoi2));
 		
 		
 	}

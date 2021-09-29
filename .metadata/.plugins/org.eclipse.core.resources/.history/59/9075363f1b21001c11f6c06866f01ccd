@@ -91,18 +91,6 @@ public class EqualsTest {
 			System.out.println("studentSoi와 studentSoi2는 동일하지 않습니다.");
 		}
 		
-		// =====
-		
-		System.out.println(studentSoi.HashCode());
-		System.out.println(studentSoi2.HashCode());
-		System.out.println(studentAnzu.HashCode());
-		
-		System.out.println("=====");
-
-		// 실제 인스턴스의 주소값
-		System.out.println(System.identityHashCode(studentSoi));
-		System.out.println(System.identityHashCode(studentSoi2));
-		
 		
 	}
 

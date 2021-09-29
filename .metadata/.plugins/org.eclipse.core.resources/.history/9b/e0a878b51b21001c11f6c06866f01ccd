@@ -99,7 +99,6 @@ public class EqualsTest {
 		
 		System.out.println("=====");
 
-		// 실제 인스턴스의 주소값
 		System.out.println(System.identityHashCode(studentSoi));
 		System.out.println(System.identityHashCode(studentSoi2));
 		
