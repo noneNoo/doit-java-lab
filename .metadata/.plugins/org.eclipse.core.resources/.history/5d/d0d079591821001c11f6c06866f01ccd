@@ -1,0 +1,13 @@
+package object;
+
+class MyDay {
+	int day;
+	int month;
+	int year;
+}
+
+public class MyDateTest {
+	public static void main(String[] args) {
+		
+	}
+}

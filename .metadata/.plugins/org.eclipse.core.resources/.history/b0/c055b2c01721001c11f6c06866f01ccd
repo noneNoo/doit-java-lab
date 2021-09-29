@@ -15,15 +15,11 @@ class Student{
 		return studentID + ", " + studentName;
 	}
 	
-	// equals 메서드 오버라이딩
-	
 	public boolean equals(Object obj) {
 		// 인자로 들어온 인스턴스를 학생형으로 형변환한다.
 		Student std = (Student)obj;
 		
 		if(obj instanceof Student) {
-			
-			// 학생 아이디값이 같으면 같은 학생으로 인식한다.
 			if(this.studentID == std.studentID) {
 				System.out.println("아이디까지 같아서 동일인물임");
 				System.out.println("========");

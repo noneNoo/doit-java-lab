@@ -15,27 +15,16 @@ class Student{
 		return studentID + ", " + studentName;
 	}
 	
-	// equals 메서드 오버라이딩
-	
 	public boolean equals(Object obj) {
 		// 인자로 들어온 인스턴스를 학생형으로 형변환한다.
+		
 		Student std = (Student)obj;
 		
 		if(obj instanceof Student) {
-			
-			// 학생 아이디값이 같으면 같은 학생으로 인식한다.
-			if(this.studentID == std.studentID) {
-				System.out.println("아이디까지 같아서 동일인물임");
-				System.out.println("========");
-				return true;
-			} else {
-				System.out.println("학생 아이디가 달라 글내려..");
-				System.out.println("========");
-				return false;
-			}
+			System.out.println("형이 같아. 처리해");
+			return true;
 		} else {
-			System.out.println("형이 다른넘을 넣었군... 오류발생");
-			System.out.println("========");
+			System.out.println("형이 다른넘을 넣었군...");
 			return false;
 		}
 	}
@@ -51,9 +40,6 @@ public class EqualsTest {
 		//위의 두 인스턴스는 힙메모리에서 같은 주소값을 가리키게 된다.
 		
 		Student studentSoi2 = new Student(100, "박소이");
-		Student studentAnzu = new Student(200, "후타바 안즈");
-		
-		studentSoi.equals(studentAnzu);
 
 		// ===============
 		// 1. 인스턴스의 복제본과 원본의 비교
