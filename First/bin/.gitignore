@@ -10,8 +10,10 @@
 /chapter6quiz/
 /chapter7quiz/
 /chapter9/
+/classex/
 /constructor/
 /cooperation/
+/generics/
 /hello/
 /hiding/
 /inheritance/
@@ -22,10 +24,8 @@
 /scheduler/
 /singleton/
 /staticexample/
+/string/
 /test/
 /thisexample/
 /virtualfunction/
 /witharraylist/
-/string/
-/classex/
-/generics/

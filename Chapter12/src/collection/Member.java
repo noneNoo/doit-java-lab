@@ -31,6 +31,6 @@ public class Member {
 	
 	@Override
 	public String toString() {
-		return memberName + " 회원님의 아이디는 " + memberID + "입니다."
+		return memberName + "님의 아이디는 " + memberID + "입니다.";
 	}
 }
