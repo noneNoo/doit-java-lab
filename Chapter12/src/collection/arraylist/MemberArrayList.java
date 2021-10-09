@@ -48,13 +48,17 @@ public class MemberArrayList {
 //			}
 //		}
 		// for 문 대신 반복자 메서드 이용
+		// Iterator은 각 요소를 순회하는 용도의 자료형이다. arrayList를 순회한다.
 		Iterator<Member> ir = arrayList.iterator();
+		
+		// hashNext() 로 이후에 요소가 더 있는지 체크한다. 요소가 있으면 true.
+		// 없으면 false로 while문이 끝나게된다.
 		while(ir.hasNext()) {
-			Member member = ir.next();
+			Member member = ir.next(); // 다음요소 반환
 			int tempID = member.getId();
 			
 			if(tempID == memberID) {
-				arrayList.remove(member);
+				arrayList.remove(member);	// 삭제
 				return true;
 			}
 		}
