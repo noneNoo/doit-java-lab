@@ -20,7 +20,7 @@ public class Student {
 	}
 	
 	// Score 추가 메서드
-	public addSubjectScore(Score score) {
+	public void addSubjectScore(Score score) {
 		scoreList.add(score);
 	}
 	
