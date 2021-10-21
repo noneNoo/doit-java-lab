@@ -1,6 +1,7 @@
 package school;
 
 import java.util.ArrayList;
+import utils.Define;
 
 
 public class Subject {
@@ -9,16 +10,16 @@ public class Subject {
 	private String subjectName;
 	
 	// 학점 계산 정책
-	private char gradeType;
+	private int gradeType;
 	
 	// 학생 리스트
 	private ArrayList<Student> studentList = new ArrayList<Student>();
 	
-	// 생성자
-	Subject(int subjectId, String subjectName, char gradeType) {
+	// 기본 생성자(비전공 과목으로 생성)
+	Subject(int subjectId, String subjectName) {
 		this.subjectId = subjectId;
 		this.subjectName = subjectName;
-		this.gradeType = gradeType;
+		this.gradeType = Define.AB_TYPE;
 	}
 	
 	// student 추가하는 메서드(수강신청)
@@ -33,7 +34,7 @@ public class Subject {
 	public String getSubjectName() {
 		return subjectName;
 	}
-	public char getGradeType() {
+	public int getGradeType() {
 		return gradeType;
 	}
 	public ArrayList<Student> getStudentList() {
