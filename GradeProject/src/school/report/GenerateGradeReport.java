@@ -18,7 +18,7 @@ public class GenerateGradeReport {
 	
 	public static final String TITLE = "수강생 학점 \t \t \n";
 	public static final String HEADER = "이름 | 학번 | 전공 | 점수 \n";
-	public static final String LINE = "---------------------\n";
+	public static final String LINE = "--------------------------\n";
 	
 	// 문자열 추가를 위한 자료형
 	private StringBuffer buffer = new StringBuffer();
@@ -65,7 +65,7 @@ public class GenerateGradeReport {
 			buffer.append(student.getStudentId());
 			buffer.append(" | ");
 			// 전공(필수과목)
-			buffer.append(student.getMarjorSubject().getSubjectName() + "\t");
+			buffer.append(student.getMarjorSubject().getSubjectName());
 			buffer.append(" | ");
 			
 			// 수강생 학점 계산 메서드
@@ -84,10 +84,11 @@ public class GenerateGradeReport {
 
 	// 수강생 학점 계산 메서드
 	private void getScoreGrade(Student student, int subjectId) {
-		ArrayList<Score> scoreList = new ArrayList<Score>();
+		ArrayList<Score> scoreList = student.getScoreList();
 		
 		// 필수과목 아이디 가져오기
 		int majorId = student.getMarjorSubject().getSubjectId();
+
 		
 		// 학점 평가 클래스 배열 생성. 
 		// gradeEvaluation의 0번 인덱스에는 기본 학점 계산 클래스가 구현되어 있고
@@ -110,6 +111,7 @@ public class GenerateGradeReport {
 					// gradeEvaluation 배열의 0번 인덱스(BasicEvaluation() 으로 접근하여 getGrade메서드 호출.)
 					grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint());
 				}
+				
 				buffer.append(score.getPoint());
 				buffer.append(":");
 				buffer.append(grade);
