@@ -16,6 +16,7 @@ public class TestMain {
 	// 과목
 	Subject korean;
 	Subject math;
+	Subject dance;
 	
 	// 리포트 클래스
 	GenerateGradeReport gradeReport = new GenerateGradeReport();
@@ -33,9 +34,11 @@ public class TestMain {
 	private void createSubject() {
 		korean = new Subject(Define.KOREAN, "국어");
 		math = new Subject(Define.MATH, "수학");
+		dance = new Subject(Define.DANCE, "방송댄스");
 		
 		goodSchool.addSubject(korean);
 		goodSchool.addSubject(math);
+		goodSchool.addSubject(dance);
 		
 		System.out.println("과목 생성 완료");
 	}
@@ -65,14 +68,21 @@ public class TestMain {
 		math.register(student4);
 		math.register(student5);
 		
+		dance.register(student1);
+		dance.register(student2);
+		dance.register(student3);
+		
 		addScoreForStudent(student1, korean, 95);
 		addScoreForStudent(student1, math, 54);
+		addScoreForStudent(student1, dance, 70);
 		
 		addScoreForStudent(student2, korean, 100);
 		addScoreForStudent(student2, math, 80);
+		addScoreForStudent(student2, dance, 90);
 
 		addScoreForStudent(student3, korean, 86);
 		addScoreForStudent(student3, math, 94);
+		addScoreForStudent(student3, dance, 80);
 		
 		addScoreForStudent(student4, korean, 97);
 		addScoreForStudent(student4, math, 97);
