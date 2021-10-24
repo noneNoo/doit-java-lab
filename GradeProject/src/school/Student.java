@@ -19,7 +19,6 @@ public class Student {
 		this.marjorSubject = marjorSubject;
 	}
 	
-	// Score 추가 메서드
 	public void addSubjectScore(Score score) {
 		scoreList.add(score);
 	}

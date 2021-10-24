@@ -1,6 +1,6 @@
 package grade;
 
-// 점수 산출 방식 비전공일시
+// 점수 산출 방식 비전공일시 (AB_TYPE)
 public class BasicEvaluation implements GradeEvaluation {
 
 	String grade;

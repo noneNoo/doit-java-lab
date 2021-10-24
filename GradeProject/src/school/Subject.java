@@ -16,7 +16,7 @@ public class Subject {
 	private ArrayList<Student> studentList = new ArrayList<Student>();
 	
 	// 기본 생성자(비전공 과목으로 생성)
-	Subject(int subjectId, String subjectName) {
+	public Subject(int subjectId, String subjectName) {
 		this.subjectId = subjectId;
 		this.subjectName = subjectName;
 		this.gradeType = Define.AB_TYPE;
