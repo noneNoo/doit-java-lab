@@ -48,8 +48,8 @@ public class Subject {
 	public void setSubjectName(String subjectName) {
 		this.subjectName = subjectName;
 	}
-	public void setGradeType(char gradeType) {
-		this.gradeType = gradeType;
+	public void setGradeType(int pfType) {
+		this.gradeType = pfType;
 	}
 	public void setArrayList (ArrayList<Student> studentList) {
 		this.studentList = studentList;

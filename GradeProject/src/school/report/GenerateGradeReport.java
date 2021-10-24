@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import grade.BasicEvaluation;
 import grade.GradeEvaluation;
 import grade.MarjorEvaluation;
+import grade.PassFailEvaluation;
 import school.School;
 import school.Score;
 import school.Student;
@@ -93,7 +94,7 @@ public class GenerateGradeReport {
 		// 학점 평가 클래스 배열 생성. 
 		// gradeEvaluation의 0번 인덱스에는 기본 학점 계산 클래스가 구현되어 있고
 		// 1번 인덱스에는 1번 인덱스에는 전공 학점 계산 클래스가 구현되어 있다.
-		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MarjorEvaluation()};
+		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MarjorEvaluation(), new PassFailEvaluation()};
 		
 		for(int i = 0; i < scoreList.size(); i++) {
 			Score score = scoreList.get(i);
@@ -102,8 +103,9 @@ public class GenerateGradeReport {
 			if(score.getSubject().getSubjectId() == subjectId) {
 				String grade;
 				
-				// 필수과목이라면
-				if(score.getStudentId() == majorId) {
+				if(score.getSubject().getGradeType() == Define.PF_TYPE) {
+					grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
+				} else if(score.getStudentId() == majorId) {
 					// gradeEvaluation 배열의 1번 인덱스(MarjorEvaluation() 으로 접근하여 getGrade메서드 호출.)
 					grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());
 				} else {
